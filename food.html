@@ -9,21 +9,38 @@
   </head>
   <body>
 
-    <h1 class="mb-5 text-center text-warning">This is our Food House !!!</h1>
+    <h1 class="m-4 text-center text-warning">This is our Food House !!!</h1>
 
     <section class="container">
-        <section class="mb-5">
-            <input id="yourFood" type="text" placeholder="search your food">
+        <section class="mb-5 d-flex justify-content-center align-itmes-center">
+            <div>
+              <input id="yourFood" type="text" placeholder="search your food">
             <button onclick="searchFood()" class="btn btn-primary">Search</button>
+            </div>
         </section>
 
-        <section id="main" class="mb-5" style="width: 20rem;">
+        <!-- <section id="main" class="mb-5" style="width: 20rem;">
            
-        </section>
+        </section> -->
 
         <div id="food-container" class="row row-cols-1 row-cols-md-3 g-4">
             
           </div>
+
+          <!-- no search massage -->
+
+          <div id="no-food" class="m-3 d-none">
+            <h3 class="text-center text-danger">No Food Found. Please Try A New Search.</h3>
+          </div>
+
+          <!-- loading spinner -->
+          <section>
+            <div id="loading" style="margin-top: 150px;" class="d-flex justify-content-center d-none">
+             <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </section>
 
     </section>
 
